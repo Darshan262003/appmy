@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_CRED="vishwasvishu123/develops"
+        DOCKER_CRED=credentials('dockerhub')
   
-        IMAGE_NAME=credentials('dockerhub')
+        IMAGE_NAME="vishwasvishu123/develops"
     }
 
     stages {
