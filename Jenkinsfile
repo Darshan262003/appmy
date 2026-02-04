@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_HUB="vishwasvishu123/develops"
   
-        DOCKER_HUB=credentials('dockerhub')
+        IMAGE_NAME=credentials('dockerhub')
     }
 
     stages {
